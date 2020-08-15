@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.bg-monitor {
+  position: relative;
+  top: 30vh;
+}
+.img {
+  z-index: 0;
+  position: relative;
+  top: 0;
+  left: 20vw;
+  height: 40vw;
+}
+.blossoms {
+  z-index: 1;
+  position: absolute;
+  height: 29vw;
+  width: 60.35vw;
+  top: 1.5vw;
+  left: 20.1vw;
+}
+.body-text1 {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  top: 35vh;
+  left: 10%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.aboutproject {
+  position: relative;
+  top: 10vh;
+  left: 6vw;
+  font-size: 55px;
+  line-height: 8vh;
+  font-family: 'Libre Franklin', sans-serif;
+  color: black;
+}
+.meettheteam {
+  position: relative;
+  top: 45vh;
+  left: 6vw;
+  font-size: 55px;
+  line-height: 8vh;
+  font-family: 'Libre Franklin', sans-serif;
+  color: black;
+}
+.theteam {
+  position: relative;
+  height: 50vw;
+  top: 90vh;
+}
+.profilepic {
+  position: relative;
+  top: 0;
+  left: 30vw;
+  height: 40vw;
+  width: 40vw;
+  padding: 0;
+}
+.leftpic {
+  z-index: -1;
+  position: absolute;
+  top: 5vw;
+  left: 10vw;
+  height: 30vw;
+  width: 30vw;
+  padding: 0;
+  margin: 0;
+  filter: brightness(75%)
+}
+.rightpic {
+  z-index: -1;
+  position: absolute;
+  top: 5vw;
+  left: 60vw;
+  height: 30vw;
+  width: 30vw;
+  padding: 0;
+  margin: 0;
+  filter: brightness(75%);
+}
+#NP {
+  color: black;
+  user-select: none;
+  position: absolute;
+  right: 0;
+  top: 20vw;
+  padding: 20px;
+  border-radius: 6px 0 0 6px;
+  font-size: 24px;
+  line-height: 40px;
+  transition: 0.2s ease;
+}
+#LP {
+  color: black;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 20vw;
+  padding: 20px;
+  border-radius: 0 6px 6px 0;
+  font-size: 24px;
+  line-height: 40px;
+  transition: 0.2s ease;
+}
+#LP:hover, #NP:hover {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+}
+.indicatorBox {
+  left: 0;
+  width: 100vw;
+  text-align: center;
+}
+.indicators {
+  position: relative;
+  cursor: pointer;
+  height: 3vw;
+  width: 3vw;
+  top: 2vw;
+  margin: 2vw;
+  background-color: rgb(90,90,90);
+  display: inline-block;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.act {
+  background-color: rgb(185,185,185);
+}
+.act:hover, .indicators:hover {
+  width: 5vw;
+  height: 5vw;
+  margin: 1vw 2vw;
+}
+svg.productsvg {
+  font: bold 50px 'Libre Franklin', sans-serif;
+  width: 290px;
+  height: 40px;
+}
+svg.teamsvg {
+  font: bold 50px 'Libre Franklin', sans-serif;
+  width: 185px;
+  height: 40px;
+}
+.product, .team {
+  margin: 0;
+  padding: 0;
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  animation: 2s pulsate infinite;
+}
+
+@keyframes pulsate {
+  50%{stroke-width: 0.5px;}
+}
+</style>
+</head>
+
+<body class="mainPg">
+  
+  <div class="navbar" id="navBar">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="about.html" class="activenav">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="settings.html">Settings</a>
+    <a href="javascript:void(0);" class="icon" onclick="menubutton()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="aboutproject">
+    ABOUT
+    <svg class="productsvg">
+    <text class="product" y="38">PRODUCT</text>
+    </svg>
+  </div>
+
+  <br>
+
+  <div class="bg-monitor" style = "margin-top:-140px">
+    <iframe class="blossoms"src="https://www.youtube.com/embed/gnRayZGEh_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; picture-in-picture"></iframe>
+    <img src="css/monitor.jpg" class="img" alt="monitor">
+   
+  </div>
+
+  <div class="body-text1">
+    Some Body Text about this product describing the basic usage and stuff. Talking about contacting others if needed and stuff like that. Some Body Text about this product describing the basic usage and stuff. Talking about contacting others if needed and stuff like that. This is dummy text.
+  </div>
+
+  <div class="meettheteam">
+    MEET THE
+    <svg class="teamsvg">
+    <text class="product" y="38">TEAM</text>
+    </svg>
+  </div>
+
+  <div class="theteam" style = "margin-top:-300px">
+    <img class="profilepic" src="css/profilepic.jpg">
+    <img class="profilepic" src="css/profilepic.jpg">
+    <img class="profilepic" src="css/profilepic.jpg">
+    <img class="profilepic" src="css/profilepic.jpg">
+    <img class="profilepic" src="css/profilepic.jpg">
+    <img class="profilepic" src="css/profilepic.jpg">
+    <img class="profilepic" src="css/profilepic.jpg">
+    <img class="profilepic" src="css/profilepic.jpg">
+
+      <a id="LP" onclick="plusSlides(-1)">&#10094;</a>
+      <a id="NP" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="indicatorBox">
+      <span class="indicators act" onclick="currentSlide(1)"></span>
+      <span class="indicators" onclick="currentSlide(2)"></span>
+      <span class="indicators" onclick="currentSlide(3)"></span>
+      <span class="indicators" onclick="currentSlide(4)"></span>
+      <span class="indicators" onclick="currentSlide(5)"></span>
+      <span class="indicators" onclick="currentSlide(6)"></span>
+      <span class="indicators" onclick="currentSlide(7)"></span>
+      <span class="indicators" onclick="currentSlide(8)"></span>
+    </div>
+  </div>
+
+  <script src="js/navbar.js"></script>
+
+  <script type="text/javascript">
+  var slideIndex = 1;
+  var time = 0;
+  var opacityVal = 1
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var l;
+    var r;
+    var slides = document.getElementsByClassName("profilepic");
+    var btns = document.getElementsByClassName("indicators");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    if (n == 1 || n > slides.length) {
+      l = 7;
+    } else {
+      l = slideIndex-2;
+    }
+    if (n == 8 || n < 1) {
+      r = 0;
+    } else {
+      r = slideIndex;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].className = "profilepic"
+    }
+    for (i = 0; i < btns.length; i++) {
+        btns[i].className = btns[i].className.replace(" act", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    btns[slideIndex-1].className += " act";
+    slides[l].style.display = "block";
+    slides[l].className += " leftpic";
+    slides[r].style.display = "block";
+    slides[r].className += " rightpic"
+  }
+  </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.4.2/antd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.19.3/apexcharts.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+</body>
+
+</html>

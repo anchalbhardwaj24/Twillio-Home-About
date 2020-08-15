@@ -1,0 +1,237 @@
+
+h1 {
+    font-family:'Libre Franklin', sans-serif;
+    text-align: left;
+   
+    margin-left:5%;
+    margin-top:3%;
+    font-size: 4.5vw;
+    margin-bottom:-10px;
+}
+
+#home {
+    margin-top: 20px;
+}
+
+table,td,th {
+    border:solid 1px;
+    border-collapse:collapse;
+   }
+
+td{background-color: #f2f2f2;}
+th{background-color:#7281cc}
+td:hover {background-color: #ddd;}
+
+table {
+  width: 90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+th {
+  height: 50px;
+  text-align: left;
+}
+
+td {
+  height: 35px;
+}
+
+h5{
+  font-family: 'Roboto', sans-serif;
+  margin-left:5%;
+  font-size: 2vw;
+  margin-right:20%;
+}
+
+.callButton {
+  border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 20px;
+    
+}
+
+.chart {
+    width: 60%;
+    height: 30px;
+    margin: -10px;
+    margin-left:auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.GoogleForm {
+  text-align:center;
+}
+
+
+/* old navbar code */
+
+/*ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.active {
+  font-weight:900;
+}
+*/
+
+/* navbar code */
+
+.navbar {
+  z-index: 2;
+  border-radius: 0;
+  position: fixed;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 20px;
+  height: 55px;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  border: solid dodgerblue;
+  border-width: 0 0 5px 0;
+  padding: 16px 20px 11px 20px;
+}
+
+.navbar a.icon {
+  display: none;
+}
+
+.index {
+  background-color: #f3f3f3;
+  color: black;
+}
+
+.navbar a.index:hover {
+  color: dodgerblue;
+  padding: 16px 20px;
+  border-width: 0;
+}
+
+.navbar a.activenav {
+  border: solid dodgerblue;
+  border-width: 0 0 5px 0;
+  padding: 16px 20px 11px 20px;
+}
+
+@media screen and (max-width: 620px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px 20px;
+    margin: 0;
+    text-decoration: none;
+  }
+  .navbar a.icon:hover {
+    border: solid dodgerblue;
+    border-width: 0 0 5px 0;
+    padding: 16px 20px 11px 20px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .navbar.responsive {
+    position: fixed;
+  }
+  .navbar.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 16px 20px;
+  }
+  .navbar.responsive a:hover {
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-width: 0;
+    padding: 16px 20px;
+    color: white;
+  }
+  .navbar.responsive a.index:hover {
+    background-image: none;
+    background-color: #f3f3f3;
+    border-width: 0;
+    padding: 16px 20px;
+    color: dodgerblue;
+  }
+  .navbar.responsive a.icon:hover {
+    background-image: none;
+    background-color: dodgerblue;
+    border-width: 0;
+    padding: 16px 20px;
+    color: white;
+  }
+  .navbar.responsive a.activenav {
+    background-image: linear-gradient(to right, dodgerblue, white);
+    color: white;
+    border-width: 0;
+    padding: 16px 20px;
+  }
+}
+
+#map {
+    height: 100%;
+  }
+
+
+ * element that contains the map. */
+     #map {
+       height: 100%;
+     }
+     /* Optional: Makes the sample page fill the window. */
+     html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }
